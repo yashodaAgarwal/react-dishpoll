@@ -4,15 +4,16 @@ import Login from "./components/Login";
 import Home from "./components/Home";
 import Polling from "./components/Polling";
 import Result from "./components/Result";
-
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
 import "./App.css";
 import { useServer } from "./context";
 
 function App() {
   const {dispatch} = useServer();
+  const navigate = useNavigate();
   useEffect(() => {
     axios 
       .get(
@@ -23,7 +24,9 @@ function App() {
       });
   }, []);
   const logoutHandler = () => {
+    console.log("dvg")
     dispatch({type:"logout"});
+    navigate("/login")
   };
 
   return (
