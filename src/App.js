@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./components/Login";
 import Home from "./components/Home";
-// import Polling from "./components/Polling";
+import Polling from "./components/Polling";
 // import Result from "./components/Result";
 
 import axios from "axios";
@@ -39,7 +39,7 @@ function App() {
         <Route path="/" element={<ProtectedRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          {/* <Route path="/polling" element={<Polling />} /> */}
+          <Route path="/polling" element={<Polling />} />
         </Route>
 
         <Route path="/login" element={<Login />} />
