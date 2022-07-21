@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-// import ProtectedRoute from "./components/ProtectedRoute";
-// import Login from "./components/Login";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./components/Login";
 import Home from "./components/Home";
 // import Polling from "./components/Polling";
 // import Result from "./components/Result";
@@ -36,14 +36,14 @@ function App() {
       </div>
 
       <Routes>
-        {/* <Route path="/" element={<ProtectedRoute />}> */}
+        <Route path="/" element={<ProtectedRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          {/* <Route path="/polling" element={<Polling />} />
-        </Route> */}
-{/* 
+          {/* <Route path="/polling" element={<Polling />} /> */}
+        </Route>
+
         <Route path="/login" element={<Login />} />
-        <Route path="/result" element={<Result />} /> */}
+        {/* <Route path="/result" element={<Result />} /> */}
       </Routes>
     </div>
   );
