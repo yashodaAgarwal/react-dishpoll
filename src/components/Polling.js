@@ -33,20 +33,13 @@ function Polling() {
   };
 
   const pollhandler = () => {
-    let first = data.filter((data) => data.id === rank1);
-    let second = data.filter((data) => data.id === rank2);
-    let third = data.filter((data) => data.id === rank3);
-
-    const updatedPoll = (ele, val) => {
-      if (data[ele]?.point) {
-        data[ele].point = data[ele].point + val;
-        console.log("this dine");
+    const updatedPoll = (e, val) => {
+      if (data[e]?.point) {
+        data[e].point = data[e].point + val;
       } else {
-        data[ele] = { ...data[ele], point: val };
-        console.log("thisdonneee");
+        data[e] = { ...data[e], point: val };
       }
     };
-
     updatedPoll(rank1 - 1, 30);
     updatedPoll(rank2 - 1, 20);
     updatedPoll(rank3 - 1, 10);

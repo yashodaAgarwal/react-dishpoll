@@ -3,7 +3,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import Polling from "./components/Polling";
-// import Result from "./components/Result";
+import Result from "./components/Result";
 
 import axios from "axios";
 import { Routes, Route } from "react-router-dom";
@@ -43,7 +43,7 @@ function App() {
         </Route>
 
         <Route path="/login" element={<Login />} />
-        {/* <Route path="/result" element={<Result />} /> */}
+        <Route path="/result" element={<Result />} />
       </Routes>
     </div>
   );
