@@ -1,0 +1,24 @@
+.tab-container {
+  background-color: white;
+}
+
+.tabs {
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  background-color: #092967;
+  color: white;
+  text-decoration: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 40%;
+  padding: 4px;
+  margin: 30px;
+  font-size: 30px;
+}

@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+.header {
+  top :0px;
+  background-color: #092967;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  color: white;
+}
+
+.logout {
+  text-decoration: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 12px;
+}
